@@ -29,7 +29,7 @@ export default function MiTechoProposalPage() {
   const p = mitecho;
 
   return (
-    <main className="min-h-screen w-full bg-ink text-white selection:bg-brand-red selection:text-white">
+    <main className="min-h-[100dvh] w-full bg-ink text-white selection:bg-brand-red selection:text-white">
       <Tracker client={p.client} />
 
       <Hero

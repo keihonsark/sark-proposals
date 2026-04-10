@@ -28,6 +28,17 @@
   }
 }
 
+@supports (height: 100dvh) {
+  :root {
+    --vh-full: 100dvh;
+  }
+}
+@supports not (height: 100dvh) {
+  :root {
+    --vh-full: 100vh;
+  }
+}
+
 body {
   background: var(--background);
   color: var(--foreground);

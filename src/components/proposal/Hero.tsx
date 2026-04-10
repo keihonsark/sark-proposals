@@ -23,7 +23,7 @@ export function Hero({
   confidential,
 }: Props) {
   return (
-    <section className="relative flex min-h-screen w-full flex-col px-6 pt-10 pb-16 sm:px-10 lg:px-16">
+    <section className="relative flex min-h-[100dvh] w-full flex-col px-6 pt-10 pb-16 sm:px-10 lg:px-16">
       <div className="flex w-full items-start justify-between">
         <div className="flex items-center gap-3">
           <Image

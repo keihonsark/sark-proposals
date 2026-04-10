@@ -11,7 +11,7 @@ export function Section({ id, eyebrow, className = "", children }: Props) {
   return (
     <section
       id={id}
-      className={`relative w-full px-6 py-[15vh] sm:px-10 lg:px-16 ${className}`}
+      className={`relative w-full px-6 py-[15dvh] sm:px-10 lg:px-16 ${className}`}
     >
       <div className="mx-auto w-full max-w-[1280px]">
         {eyebrow && (

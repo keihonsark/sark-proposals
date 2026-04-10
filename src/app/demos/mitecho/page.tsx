@@ -29,7 +29,7 @@ const NAVY = "#0f1729";
 
 export default function MiTechoDemoPage() {
   return (
-    <main className="min-h-screen w-full bg-white font-sans text-slate-900">
+    <main className="min-h-[100dvh] w-full bg-white font-sans text-slate-900">
       <SarkBanner />
       <NavBar />
       <Hero />
@@ -234,7 +234,7 @@ function Hero() {
         <div className="pointer-events-none absolute -right-32 -top-32 h-[520px] w-[520px] rounded-full bg-red-600/10 blur-[110px]" />
       </div>
 
-      <div className="relative mx-auto flex min-h-[88vh] max-w-7xl items-center px-4 py-24 sm:px-6 md:py-32 lg:px-8">
+      <div className="relative mx-auto flex min-h-[88dvh] max-w-7xl items-center px-4 py-24 sm:px-6 md:py-32 lg:px-8">
         <div className="max-w-2xl">
           <Reveal>
             <div className="mb-8 inline-flex items-center gap-2.5 rounded-full border border-white/15 bg-white/10 px-4 py-2 backdrop-blur-sm">

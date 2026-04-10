@@ -220,37 +220,47 @@ export const mitecho: Proposal = {
 
   whatYouGet: {
     eyebrow: "What you get",
-    title: "Everything You Need to Dominate Utah County",
+    title: "Everything You Need to Own Utah County",
     deliverables: [
       {
         title: "Website Redesign",
         detail:
-          "Complete rebuild. Fast, mobile-first, conversion-optimized. Click-to-call, chat, proper forms. Built and handed off to you.",
+          "Complete rebuild. Fast, mobile-first, conversion-optimized. Click-to-call, chat, proper lead capture forms including roofing calculator. Built and handed off to you.",
       },
       {
-        title: "Google LSA Management",
+        title: "Google LSA + Search Ads",
         detail:
-          "Full optimization, lead quality review, bid strategy, dispute management. Maximize your $2–4K/week budget.",
+          "Full campaign build, optimization, bid strategy, lead quality review, and dispute management. A/B testing on ad copy, landing pages, and CTAs. You cover ad spend — we maximize every dollar.",
       },
       {
-        title: "Google Search Ads",
+        title: "Ad Creative + Copy",
         detail:
-          "Campaigns for “roof repair Orem,” “emergency roofer Provo,” “storm damage Utah County.” You cover ad spend.",
+          "We create all ad copy, graphics, and landing pages. Continuous A/B testing across headlines, images, and offers to find what converts best in your market.",
       },
       {
-        title: "CRM + Automation",
+        title: "CRM + Lead Automation",
         detail:
-          "Lead → instant text + email in seconds. Pipeline tracking. Automated review requests post-job.",
+          "Lead capture → instant text + email follow-up in seconds. Drip email campaigns from lead magnets (roofing calculator, free inspection). Pipeline tracking from lead to set appointment.",
+      },
+      {
+        title: "Call Tracking + Transcripts",
+        detail:
+          "Dedicated tracking numbers on every campaign. Call recordings and AI transcripts so we can coach on close rates and track which ads generate real appointments — not just clicks.",
       },
       {
         title: "Review Generation",
         detail:
-          "SMS review requests after every job. Target: 100+ Google reviews in 6 months.",
+          "Automated SMS review requests after every completed job. Target: 100+ Google reviews in 6 months to compete with legacy companies.",
       },
       {
-        title: "Monthly Reporting",
+        title: "Monthly Reporting + Strategy",
         detail:
-          "Transparent dashboard: leads, cost per lead, close rate, revenue. You see everything.",
+          "Transparent dashboard: leads, cost per lead, appointments set, close rate, revenue attributed. Monthly strategy call to review performance and plan next moves.",
+      },
+      {
+        title: "Outsourced CMO",
+        detail:
+          "We're not a set-it-and-forget-it agency. We embed alongside your sales and management team — available for marketing questions, strategy discussions, and business decisions. Fully invested in your growth.",
       },
     ],
   },
@@ -279,16 +289,16 @@ export const mitecho: Proposal = {
   },
 
   results: {
-    eyebrow: "First 90 days",
+    eyebrow: "What we're aiming for",
     rows: [
-      { metric: "LSA leads / month", value: "40–80+ (at $30–80/lead)" },
-      { metric: "Search ad leads / month", value: "15–30+" },
-      { metric: "Avg close rate (industry)", value: "15–25%" },
-      { metric: "Revenue per closed job", value: "$10,000–$25,000" },
-      { metric: "Estimated monthly revenue", value: "$60K–$200K+" },
+      { metric: "Monthly lead volume (LSA + Search + Organic)", value: "50–100+" },
+      { metric: "Booked appointments / month", value: "15–30" },
+      { metric: "Avg. job value (repair + replacement mix)", value: "$8,000–$20,000" },
+      { metric: "Target close rate on set appointments", value: "30–50%" },
+      { metric: "Monthly revenue potential", value: "$40K–$150K+" },
     ],
     disclaimer:
-      "Estimates based on industry benchmarks and competitor data. We track everything transparently.",
+      "These are targets, not guarantees. Every market is different. What we guarantee is full transparency — you'll see every lead, every call transcript, every dollar spent, and every appointment set. We adjust strategy monthly based on real data.",
   },
 
   timeline: {

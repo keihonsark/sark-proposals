@@ -161,7 +161,7 @@ export default function MiTechoProposalPage() {
       <Section eyebrow={p.results.eyebrow}>
         <Reveal>
           <h2 className="mb-16 max-w-3xl font-display text-[clamp(2.5rem,6vw,5rem)] leading-[0.95] text-white">
-            What we expect to see.
+            Our targets for the first 90 days.
           </h2>
         </Reveal>
         <ResultsTable rows={p.results.rows} disclaimer={p.results.disclaimer} />

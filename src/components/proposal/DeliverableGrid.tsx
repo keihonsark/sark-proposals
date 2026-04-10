@@ -4,7 +4,7 @@ type Item = { title: string; detail: string };
 
 export function DeliverableGrid({ items }: { items: Item[] }) {
   return (
-    <div className="grid grid-cols-1 gap-6 md:grid-cols-2 lg:grid-cols-3">
+    <div className="grid grid-cols-1 gap-6 md:grid-cols-2">
       {items.map((item, i) => (
         <Reveal key={item.title} delay={i * 80}>
           <div className="group relative h-full border border-white/10 bg-white/[0.02] p-8 transition-colors hover:border-brand-red/50 hover:bg-white/[0.04]">

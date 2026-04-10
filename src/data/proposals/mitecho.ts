@@ -151,7 +151,7 @@ export const mitecho: Proposal = {
       "Cookie consent popup covers mobile content on a 7/100 performance page",
     ],
     closing:
-      "Your current provider reskinned another client's site and left their branding inside yours.",
+      "These are easy fixes that will immediately improve credibility and trust.",
   },
 
   designIssues: {
@@ -180,7 +180,7 @@ export const mitecho: Proposal = {
       },
     ],
     closing:
-      "Your site is the first thing a homeowner sees after a Google search. Right now, it's working against you.",
+      "Small design upgrades make a big difference in how homeowners perceive your business.",
   },
 
   opportunity: {
@@ -203,6 +203,18 @@ export const mitecho: Proposal = {
         title: "$0 Ad History = Clean Slate",
         detail: "Olympus proves $34K/mo is viable ROI. You can start at $2.5K.",
       },
+    ],
+  },
+
+  mockup: {
+    eyebrow: "What this could look like",
+    headline: "A site that matches the quality of your work.",
+    description:
+      "Clean design. Fast load times. Forms that actually capture leads. Built for mobile. Built for Utah County homeowners.",
+    images: [
+      "/images/contractor-portrait.png",
+      "/images/happy-homeowners.png",
+      "/images/team-photo.png",
     ],
   },
 

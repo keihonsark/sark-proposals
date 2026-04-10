@@ -27,13 +27,17 @@ export function ComparisonTable({ headers, rows, summary }: Props) {
         <div className="overflow-x-auto border border-white/10">
           <table className="w-full min-w-[640px] border-collapse">
             <thead>
-              <tr className="border-b border-white/10 bg-white/[0.03]">
+              <tr className="border-b border-white/10 bg-white/[0.04]">
                 {headers.map((h, i) => (
                   <th
                     key={h}
-                    className={`px-4 py-5 text-left font-display text-xs tracking-[0.25em] text-white/70 sm:px-6 ${
-                      i === 0 ? "" : "text-center"
-                    } ${i === 1 ? "text-brand-red" : ""}`}
+                    className={`px-4 py-6 font-display text-sm tracking-[0.25em] sm:px-6 ${
+                      i === 0 ? "text-left" : "text-center"
+                    } ${
+                      i === 1
+                        ? "bg-white/[0.03] text-brand-red"
+                        : "text-white"
+                    }`}
                   >
                     {h}
                   </th>
@@ -48,13 +52,15 @@ export function ComparisonTable({ headers, rows, summary }: Props) {
                     ri % 2 === 1 ? "bg-white/[0.015]" : ""
                   }`}
                 >
-                  <td className="px-4 py-5 text-sm text-white/85 sm:px-6 sm:text-base">
+                  <td className="px-4 py-5 text-base text-white/85 sm:px-6">
                     {r.metric}
                   </td>
                   {r.values.map((v, ci) => (
                     <td
                       key={ci}
-                      className={`px-4 py-5 text-center text-sm sm:px-6 sm:text-base ${toneClass(v)}`}
+                      className={`px-4 py-5 text-center text-base sm:px-6 ${
+                        ci === 0 ? "bg-white/[0.03]" : ""
+                      } ${toneClass(v)}`}
                     >
                       {cellText(v)}
                     </td>

@@ -46,6 +46,12 @@ export type Proposal = {
     eyebrow: string;
     items: { title: string; detail: string }[];
   };
+  mockup?: {
+    eyebrow: string;
+    headline: string;
+    description: string;
+    images: string[];
+  };
   whatYouGet: {
     eyebrow: string;
     title: string;

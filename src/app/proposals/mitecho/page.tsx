@@ -11,6 +11,7 @@ import { IssuesList } from "@/components/proposal/IssuesList";
 import { AccentList } from "@/components/proposal/AccentList";
 import { DeliverableGrid } from "@/components/proposal/DeliverableGrid";
 import { InvestmentCards } from "@/components/proposal/InvestmentCards";
+import { MockupShowcase } from "@/components/proposal/MockupShowcase";
 import { ResultsTable } from "@/components/proposal/ResultsTable";
 import { Timeline } from "@/components/proposal/Timeline";
 import { SignatureBlock } from "@/components/proposal/SignatureBlock";
@@ -45,7 +46,7 @@ export default function MiTechoProposalPage() {
       <Section eyebrow={p.problem.eyebrow}>
         <Reveal>
           <h2 className="mb-16 max-w-3xl font-display text-[clamp(2.5rem,6vw,5rem)] leading-[0.95] text-white">
-            Three numbers that explain everything.
+            Here&apos;s where things stand today.
           </h2>
         </Reveal>
         <StatCards stats={p.problem.stats} />
@@ -54,8 +55,8 @@ export default function MiTechoProposalPage() {
       <Section eyebrow={p.performance.eyebrow}>
         <Reveal>
           <h2 className="mb-16 max-w-3xl font-display text-[clamp(2.5rem,6vw,5rem)] leading-[0.95] text-white">
-            A 7 out of 100 is not a website.<br />
-            <span className="text-white/50">It&apos;s a liability.</span>
+            Your site is working harder than it should.<br />
+            <span className="text-white/50">Here&apos;s what Google sees.</span>
           </h2>
         </Reveal>
         <PerformanceBlock
@@ -68,8 +69,8 @@ export default function MiTechoProposalPage() {
       <Section eyebrow={p.seo.eyebrow}>
         <Reveal>
           <h2 className="mb-16 max-w-3xl font-display text-[clamp(2.5rem,6vw,5rem)] leading-[0.95] text-white">
-            Invisible on Google.<br />
-            <span className="text-white/50">Hostile to backlinks.</span>
+            There&apos;s room to grow.<br />
+            <span className="text-white/50">A lot of room.</span>
           </h2>
         </Reveal>
         <SeoBlock stats={p.seo.stats} findings={p.seo.findings} />
@@ -78,7 +79,7 @@ export default function MiTechoProposalPage() {
       <Section eyebrow={p.competitive.eyebrow}>
         <Reveal>
           <h2 className="mb-16 max-w-3xl font-display text-[clamp(2.5rem,6vw,5rem)] leading-[0.95] text-white">
-            The competition is already here.
+            Here&apos;s how you stack up.
           </h2>
         </Reveal>
         <ComparisonTable
@@ -91,8 +92,8 @@ export default function MiTechoProposalPage() {
       <Section eyebrow={p.criticalIssues.eyebrow}>
         <Reveal>
           <h2 className="mb-16 max-w-3xl font-display text-[clamp(2.5rem,6vw,5rem)] leading-[0.95] text-white">
-            Eight things wrong<br />
-            <span className="text-brand-red">right now.</span>
+            Quick wins<br />
+            <span className="text-brand-red">we can fix immediately.</span>
           </h2>
         </Reveal>
         <IssuesList items={p.criticalIssues.items} closing={p.criticalIssues.closing} />
@@ -101,7 +102,7 @@ export default function MiTechoProposalPage() {
       <Section eyebrow={p.designIssues.eyebrow}>
         <Reveal>
           <h2 className="mb-16 max-w-3xl font-display text-[clamp(2.5rem,6vw,5rem)] leading-[0.95] text-white">
-            The site is fighting the buyer.
+            Your site deserves better design.
           </h2>
         </Reveal>
         <AccentList items={p.designIssues.items} closing={p.designIssues.closing} />
@@ -113,11 +114,25 @@ export default function MiTechoProposalPage() {
       >
         <Reveal>
           <h2 className="mb-16 max-w-3xl font-display text-[clamp(2.5rem,6vw,5rem)] leading-[0.95] text-white">
-            But here&apos;s what nobody else sees.
+            Here&apos;s what makes this exciting.
           </h2>
         </Reveal>
         <AccentList items={p.opportunity.items} accent="amber" />
       </Section>
+
+      {p.mockup && (
+        <Section eyebrow={p.mockup.eyebrow}>
+          <Reveal>
+            <h2 className="mb-16 max-w-4xl font-display text-[clamp(2.5rem,6vw,5rem)] leading-[0.95] text-white">
+              {p.mockup.headline}
+            </h2>
+          </Reveal>
+          <MockupShowcase
+            description={p.mockup.description}
+            images={p.mockup.images}
+          />
+        </Section>
+      )}
 
       <Section eyebrow={p.whatYouGet.eyebrow}>
         <Reveal>

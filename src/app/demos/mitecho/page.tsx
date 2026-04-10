@@ -903,11 +903,9 @@ function RoofEstimator() {
   return (
     <section
       id="estimator"
-      className="relative overflow-hidden noise-overlay py-20"
+      className="relative overflow-hidden noise-overlay py-24"
       style={{ backgroundColor: NAVY }}
     >
-      <div className="pointer-events-none absolute -right-40 top-0 h-[600px] w-[600px] rounded-full bg-red-600/8 blur-[120px]" />
-
       <div className="mx-auto max-w-5xl px-4 sm:px-6 lg:px-8">
         <div className="text-center">
           <Reveal>

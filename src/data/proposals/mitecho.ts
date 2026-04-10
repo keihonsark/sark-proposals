@@ -339,7 +339,7 @@ export const mitecho: Proposal = {
     headline: "Ready to Build This Together?",
     subline: "From chaos to clarity.",
     sark: { name: "Keihon Sarkhosh", title: "Founder, SARK Agency" },
-    client: { name: "Terry Bailey", title: "Co-Founder, Mi Techo Roofing" },
+    client: { name: "Terry Bailey", title: "Founder, Mi Techo Roofing" },
   },
 
   footer: {

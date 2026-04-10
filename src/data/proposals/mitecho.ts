@@ -3,7 +3,7 @@ import type { Proposal } from "./types";
 export const mitecho: Proposal = {
   slug: "mitecho",
   client: "Mi Techo Roofing",
-  clientLogoText: "MI TECHO",
+  clientLogo: "/images/mitecho-logo.png",
   preparedFor: "Prepared for Mi Techo Roofing",
   date: "April 2026",
   confidential: true,

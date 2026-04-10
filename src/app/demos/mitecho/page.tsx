@@ -44,7 +44,19 @@ export default function MiTechoDemoPage() {
       <FinalCTA />
       <FooterSection />
       <MobileStickyBar />
+      <BackToProposal />
     </main>
+  );
+}
+
+function BackToProposal() {
+  return (
+    <Link
+      href="/proposals/mitecho"
+      className="fixed right-4 bottom-20 z-[55] inline-flex items-center gap-1.5 rounded-full border border-white/20 bg-white/10 px-4 py-2 text-sm font-semibold text-white backdrop-blur-md transition hover:bg-white/20 sm:right-6 sm:bottom-6"
+    >
+      ← Back to Proposal
+    </Link>
   );
 }
 

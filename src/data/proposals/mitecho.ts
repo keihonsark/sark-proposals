@@ -238,9 +238,9 @@ export const mitecho: Proposal = {
           "We create all ad copy, graphics, and landing pages. Continuous A/B testing across headlines, images, and offers to find what converts best in your market.",
       },
       {
-        title: "CRM + Lead Automation",
+        title: "JobNimbus Integration + Automation",
         detail:
-          "Lead capture → instant text + email follow-up in seconds. Drip email campaigns from lead magnets (roofing calculator, free inspection). Pipeline tracking from lead to set appointment.",
+          "We plug directly into your existing JobNimbus CRM. Website leads, LSA leads, and ad leads auto-create contacts with source tracking. Job completion triggers review requests. No new software to learn — we supercharge what you already use.",
       },
       {
         title: "Call Tracking + Transcripts",

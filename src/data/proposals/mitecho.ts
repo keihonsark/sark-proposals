@@ -299,11 +299,11 @@ export const mitecho: Proposal = {
   results: {
     eyebrow: "What we're aiming for",
     rows: [
-      { metric: "Monthly lead volume (LSA + Search + Organic)", value: "50–100+" },
-      { metric: "Booked appointments / month", value: "15–30" },
-      { metric: "Avg. job value (repair + replacement mix)", value: "$8,000–$20,000" },
-      { metric: "Target close rate on set appointments", value: "30–50%" },
-      { metric: "Monthly revenue potential", value: "$40K–$150K+" },
+      { metric: "Monthly lead volume (LSA + Search + Organic)", value: "25–50" },
+      { metric: "Booked appointments / month", value: "8–15" },
+      { metric: "Avg. job value (repair + replacement mix)", value: "$15,000–$30,000" },
+      { metric: "Target close rate on set appointments", value: "18–30%" },
+      { metric: "Monthly revenue potential", value: "$25K–$100K+" },
     ],
     disclaimer:
       "These are targets, not guarantees. Every market is different. What we guarantee is full transparency — you'll see every lead, every call transcript, every dollar spent, and every appointment set. We adjust strategy monthly based on real data.",

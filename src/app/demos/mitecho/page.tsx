@@ -205,7 +205,7 @@ function Hero() {
     >
       <div className="absolute inset-0">
         <Image
-          src="/images/contractor-portrait.png"
+          src="/images/hero/hero-home.png"
           alt=""
           fill
           priority
@@ -349,25 +349,25 @@ const services = [
   {
     title: "Roof Repair",
     desc: "Leaks, missing shingles, flashing failures. Quick diagnosis, honest pricing, lasting fixes.",
-    image: "/images/contractor-portrait.png",
+    image: "/images/roofing/roofing-crew.png",
     icon: <WrenchIcon className="h-7 w-7" />,
   },
   {
     title: "Roof Replacement",
     desc: "Complete tear-off and rebuild. Premium shingles, manufacturer warranties, $0 down financing.",
-    image: "/images/team-photo.png",
+    image: "/images/hero/hero-home.png",
     icon: <HouseIcon className="h-7 w-7" />,
   },
   {
     title: "Storm Damage & Insurance",
     desc: "We work directly with your insurance carrier. Free inspection, full claim support, zero hassle.",
-    image: "/images/happy-homeowners.png",
+    image: "/images/before-after/before-roof-1.png",
     icon: <BoltIcon className="h-7 w-7" />,
   },
   {
     title: "Gutters & Siding",
     desc: "Seamless gutters, fascia, soffit, and siding. The complete envelope your roof depends on.",
-    image: "/images/paint-exterior.png",
+    image: "/images/about/paint-exterior.png",
     icon: <PaintIcon className="h-7 w-7" />,
   },
 ];
@@ -459,13 +459,15 @@ function BeforeAfterSection() {
         <div className="mt-16 grid gap-8 md:grid-cols-2">
           <Reveal>
             <BeforeAfter
-              image="/images/team-photo.png"
+              before="/images/before-after/before-roof-1.png"
+              after="/images/before-after/after-roof-1.png"
               caption="Complete roof replacement — Orem, UT"
             />
           </Reveal>
           <Reveal delay={140}>
             <BeforeAfter
-              image="/images/contractor-portrait.png"
+              before="/images/before-after/before-roof-2.png"
+              after="/images/before-after/after-roof-2.png"
               caption="Full storm restoration — Provo, UT"
             />
           </Reveal>
@@ -475,7 +477,15 @@ function BeforeAfterSection() {
   );
 }
 
-function BeforeAfter({ image, caption }: { image: string; caption: string }) {
+function BeforeAfter({
+  before,
+  after,
+  caption,
+}: {
+  before: string;
+  after: string;
+  caption: string;
+}) {
   const ref = useRef<HTMLDivElement>(null);
   const [pos, setPos] = useState(50);
   const [drag, setDrag] = useState(false);
@@ -520,24 +530,23 @@ function BeforeAfter({ image, caption }: { image: string; caption: string }) {
         }}
         style={{ cursor: "ew-resize" }}
       >
-        {/* BEFORE — desaturated */}
+        {/* BEFORE — full background */}
         <Image
-          src={image}
+          src={before}
           alt={`Before — ${caption}`}
           fill
           sizes="(max-width: 768px) 100vw, 50vw"
           className="object-cover pointer-events-none"
-          style={{ filter: "grayscale(0.85) brightness(0.55) contrast(1.1)" }}
           draggable={false}
         />
         <span className="absolute left-3 top-3 z-10 rounded-full bg-slate-900/80 px-3 py-1 text-[10px] font-bold uppercase tracking-wider text-white">
           Before
         </span>
 
-        {/* AFTER — clipped */}
+        {/* AFTER — clipped overlay */}
         <div className="absolute inset-0" style={{ clipPath: `inset(0 0 0 ${pos}%)` }}>
           <Image
-            src={image}
+            src={after}
             alt={`After — ${caption}`}
             fill
             sizes="(max-width: 768px) 100vw, 50vw"
@@ -621,7 +630,7 @@ function WhyUs() {
           <Reveal delay={120}>
             <div className="relative h-72 overflow-hidden rounded-2xl shadow-2xl ring-2 ring-red-500/30 md:h-96">
               <Image
-                src="/images/team-photo.png"
+                src="/images/roofing/roofing-crew.png"
                 alt="Mi Techo crew"
                 fill
                 sizes="(max-width: 1024px) 100vw, 50vw"
@@ -697,7 +706,7 @@ function Financing() {
           <Reveal delay={120}>
             <div className="relative h-72 overflow-hidden rounded-2xl shadow-2xl md:h-96">
               <Image
-                src="/images/happy-homeowners.png"
+                src="/images/about/happy-homeowners.png"
                 alt="Happy homeowners"
                 fill
                 sizes="(max-width: 1024px) 100vw, 50vw"
@@ -894,7 +903,7 @@ function RoofEstimator() {
   return (
     <section
       id="estimator"
-      className="relative overflow-hidden noise-overlay py-24 md:py-32"
+      className="relative overflow-hidden noise-overlay py-20"
       style={{ backgroundColor: NAVY }}
     >
       <div className="pointer-events-none absolute -right-40 top-0 h-[600px] w-[600px] rounded-full bg-red-600/8 blur-[120px]" />
@@ -911,7 +920,7 @@ function RoofEstimator() {
             </h2>
           </Reveal>
           <Reveal delay={160}>
-            <p className="mx-auto mt-6 max-w-2xl text-base leading-relaxed text-white/70 sm:text-lg">
+            <p className="mx-auto mt-5 max-w-2xl text-base leading-relaxed text-white/70 sm:text-lg">
               Enter your address. We&apos;ll pull a satellite view of your property and give you
               an instant cost estimate. No phone call required.
             </p>
@@ -919,7 +928,7 @@ function RoofEstimator() {
         </div>
 
         {state === "input" && (
-          <div className="mt-12">
+          <div className="mt-8">
             <Reveal>
               <div className="mx-auto flex max-w-2xl flex-col gap-3 sm:flex-row">
                 <div className="relative flex-1">
@@ -951,7 +960,7 @@ function RoofEstimator() {
             </Reveal>
 
             <Reveal delay={200}>
-              <div className="mt-12 flex flex-wrap items-center justify-center gap-x-8 gap-y-3 text-[13px] font-semibold text-white/55">
+              <div className="mt-8 flex flex-wrap items-center justify-center gap-x-8 gap-y-3 text-[13px] font-semibold text-white/55">
                 <span className="inline-flex items-center gap-2">
                   <ShieldIcon className="h-4 w-4 text-red-500" /> Licensed &amp; Insured
                 </span>
@@ -967,7 +976,7 @@ function RoofEstimator() {
         )}
 
         {state === "loading" && (
-          <div className="mt-12 wizard-step">
+          <div className="mt-8 wizard-step">
             <div className="mx-auto max-w-xl text-center">
               <div className="relative mx-auto mb-8 aspect-[3/2] w-full overflow-hidden rounded-2xl border border-white/10 shadow-2xl">
                 <div ref={loadingMapHolder} className="absolute inset-0" />
@@ -987,7 +996,7 @@ function RoofEstimator() {
         )}
 
         {state === "results" && estimate && (
-          <div className="mt-12 wizard-step">
+          <div className="mt-8 wizard-step">
             <div className="grid gap-8 lg:grid-cols-[1.1fr_1fr]">
               <div className="relative">
                 <div
@@ -1128,7 +1137,7 @@ function LeadFormSection() {
     <section id="lead" className="relative overflow-hidden py-24 md:py-32">
       <div className="absolute inset-0">
         <Image
-          src="/images/team-photo.png"
+          src="/images/roofing/roofing-crew.png"
           alt=""
           fill
           sizes="100vw"

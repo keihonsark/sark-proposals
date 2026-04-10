@@ -57,7 +57,8 @@ export const mitecho: Proposal = {
       { value: "$0", label: "Ad Spend" },
     ],
     findings: [
-      "~150 backlinks — mostly spam / auto-generated",
+      "Keyword cannibalization: 'roof repair Provo' ranks at two positions — two pages competing against each other, splitting ranking power. Quick fix with a 301 redirect.",
+      "98 referring domains — mostly DR 2–8 range with no high-authority industry or local links",
       "Zero city-specific landing pages",
       "Missing from all major citation networks",
       "No blog content — competitors publish regularly",
@@ -68,7 +69,7 @@ export const mitecho: Proposal = {
 
   competitive: {
     eyebrow: "Competitive landscape",
-    headers: ["Metric", "Mi Techo", "A1 Roofing", "Olympus", "Liberty"],
+    headers: ["Metric", "Mi Techo", "A1 Roofing", "Olympus", "Liberty", "Allstar"],
     rows: [
       {
         metric: "Organic Keywords",
@@ -76,6 +77,7 @@ export const mitecho: Proposal = {
           { text: "61", tone: "bad" },
           { text: "383", tone: "good" },
           { text: "343", tone: "good" },
+          "Active",
           "Active",
         ],
       },
@@ -86,6 +88,7 @@ export const mitecho: Proposal = {
           { text: "262", tone: "good" },
           { text: "85", tone: "good" },
           "—",
+          "—",
         ],
       },
       {
@@ -95,6 +98,7 @@ export const mitecho: Proposal = {
           "0",
           { text: "213", tone: "good" },
           "Active",
+          "—",
         ],
       },
       {
@@ -104,6 +108,7 @@ export const mitecho: Proposal = {
           "$0",
           { text: "$34,750", tone: "good" },
           "Active",
+          "—",
         ],
       },
       {
@@ -112,6 +117,7 @@ export const mitecho: Proposal = {
           { text: "~15", tone: "bad" },
           { text: "~500", tone: "good" },
           { text: "187", tone: "good" },
+          "—",
           "—",
         ],
       },
@@ -122,6 +128,7 @@ export const mitecho: Proposal = {
           { text: "YES", tone: "good" },
           { text: "YES", tone: "good" },
           "—",
+          "—",
         ],
       },
       {
@@ -131,11 +138,12 @@ export const mitecho: Proposal = {
           "NO",
           { text: "YES", tone: "good" },
           { text: "YES", tone: "good" },
+          "NO",
         ],
       },
     ],
     summary:
-      "A1 dominates organic. Olympus proves paid ads work ($34K/mo). Mi Techo has done neither — the upside is enormous.",
+      "A1 dominates organic. Olympus proves paid ads work ($34K/mo). Liberty and Allstar are gaining ground with stronger local content. Mi Techo has done neither — the upside is enormous.",
   },
 
   criticalIssues: {
